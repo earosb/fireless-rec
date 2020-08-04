@@ -3,7 +3,7 @@
     <div class="w-3/12 h-full flex flex-col">
       <div class="h-64 bg-blue-500 border-2 border-black rounded">
         <div class="flex rounded-lg p-4">
-          <img class="h-16 w-16 rounded-full mx-2 shadow" src="https://doc-14-6o-docs.googleusercontent.com/docs/securesc/elk1lrmncqoc6g554r9fsj1eujq8mrbi/56qa172v552f0a2upkci7gv3f3ffggm7/1596519825000/13793146303851389405/15747946949115554123Z/1a5njhBvkERZIjGKp1suXipmHl8BDjbln?e=view&nonce=l3dqpithj8mjm&user=15747946949115554123Z&hash=7k2ejccrncchs5i6kc37eh72og4ha8iq" alt="img">
+          <img class="h-16 w-16 rounded-full mx-2 shadow" src="~/assets/img/uc.jpg" alt="img">
           <div class="text-left">
             <div class="text-gray-200 uppercase text-xs">Cuerpo de bomberos</div>
             <h2 class="text-lg text-white tracking-widest uppercase font-semibold">Temuco</h2>
@@ -35,7 +35,21 @@
       <div class="h-full p-4 flex flex-col items-center justify-start bg-gray-100 border-2 border-black rounded">
         <span
           class="p-2 mb-4 rounded-full text-orange-600 text-xs uppercase font-semibold">Personal presente</span>
-        <div v-for="aux in 5" class="bg-white rounded my-1 px-4 h-16 w-full shadow">
+        <div v-for="aux in team" class="bg-white rounded my-1 px-4 w-full">
+
+
+          <div class="flex rounded-lg p-4">
+            <img class="h-8 w-8 rounded-full mx-2 shadow" :src="`/img/${aux.icon}`" alt="img">
+            <div class="flex justify-between items-center w-full">
+              <div class="text-left">
+                <div class="text-gray-700 uppercase text-xs font-bold">{{ aux.name }}</div>
+                <div class="text-green-700 text-xs">Guardia nocturna</div>
+              </div>
+              <div>
+                <div class="text-gray-500 text-xs">presente hace 21 horas</div>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -52,7 +66,20 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      team: [
+        {name: 'Samir Valls', icon: 'firefighter-80.png'},
+        {name: 'Virginia Jover', icon: 'fireman-female-80.png'},
+        {name: 'Damian Morales', icon: 'firefighter-80.png'},
+        {name: 'Luciano Hervas', icon: 'firefighter-80.png'},
+        {name: 'Faustino Mata', icon: 'firefighter-80.png'},
+        {name: 'Paula Contreras', icon: 'fireman-female-80.png'},
+      ]
+    }
+  }
+};
 </script>
 
 <style>
