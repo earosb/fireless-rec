@@ -1,8 +1,15 @@
 <template>
   <div class="flex h-screen bg-black p-1">
     <div class="w-3/12 h-full flex flex-col">
-      <div class="h-64 bg-gray-100 border-2 border-black rounded">
-        Header
+      <div class="h-64 bg-blue-500 border-2 border-black rounded">
+        <div class="flex rounded-lg p-4">
+          <img class="h-16 w-16 rounded-full mx-2 shadow" src="https://doc-14-6o-docs.googleusercontent.com/docs/securesc/elk1lrmncqoc6g554r9fsj1eujq8mrbi/56qa172v552f0a2upkci7gv3f3ffggm7/1596519825000/13793146303851389405/15747946949115554123Z/1a5njhBvkERZIjGKp1suXipmHl8BDjbln?e=view&nonce=l3dqpithj8mjm&user=15747946949115554123Z&hash=7k2ejccrncchs5i6kc37eh72og4ha8iq" alt="img">
+          <div class="text-left">
+            <div class="text-gray-200 uppercase text-xs">Cuerpo de bomberos</div>
+            <h2 class="text-lg text-white tracking-widest uppercase font-semibold">Temuco</h2>
+            <div class="text-gray-200 text-xs">Cuartel 4ta compañia</div>
+          </div>
+        </div>
       </div>
       <div class="h-full bg-gray-100 border-2 border-black rounded">
         <div class="p-4">
